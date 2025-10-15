@@ -28,7 +28,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
         children: [
           const CircleAvatar(
             radius: 18,
-            backgroundImage: AssetImage('images/istiaq.jpg'),
+            backgroundImage: AssetImage('images/irfan.jpg'),
           ),
           const SizedBox(width: 10),
           Column(
@@ -101,7 +101,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
                           child: child,
                         ),
                         child: Text(
-                          _showingBalance ? '৳ 2,350.00' : 'Show balance',
+                          _showingBalance ? ' 2,350.00' : 'Show balance',
                           key: ValueKey(_showingBalance),
                           style: const TextStyle(
                             fontSize: 12,
