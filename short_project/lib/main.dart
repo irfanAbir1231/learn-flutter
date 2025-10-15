@@ -31,7 +31,8 @@ class HomePage extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.only(top: 20, bottom: 20),
         child: Row(
-          children: <Widget>[
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
             Container(
                 width: 100,
                 height: 2000,
