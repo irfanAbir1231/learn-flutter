@@ -9,6 +9,7 @@ import '../widgets/offers_widget.dart';
 import '../widgets/other_services_widget.dart';
 import '../widgets/main_widget.dart';
 
+import 'home_widgets.dart';
 import 'scan_page.dart';
 import 'search_page.dart';
 import 'inbox_page.dart';
@@ -24,21 +25,22 @@ class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
-    SingleChildScrollView(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: const [
-          MainWidget(),
-          CarouselWidget(),
-          MyBkashWidget(),
-          BkashBundleWidget(),
-          SuggestionWidget(),
-          OffersWidget(),
-          OtherServicesWidget(),
-          SizedBox(height: 80),
-        ],
-      ),
-    ),
+    // SingleChildScrollView(
+    //   child: Column(
+    //     crossAxisAlignment: CrossAxisAlignment.stretch,
+    //     children: const [
+    //       MainWidget(),
+    //       CarouselWidget(),
+    //       MyBkashWidget(),
+    //       BkashBundleWidget(),
+    //       SuggestionWidget(),
+    //       OffersWidget(),
+    //       OtherServicesWidget(),
+    //       SizedBox(height: 80),
+    //     ],
+    //   ),
+    // ),
+    const HomeWidgets(),
     const ScanPage(),
     const SearchPage(),
     const InboxPage(),
